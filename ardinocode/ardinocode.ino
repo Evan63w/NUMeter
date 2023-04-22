@@ -19,7 +19,7 @@ void loop()
   float volt = (float)pH * 5.0 / 1024 / 6;
   float phValue = -5.70 * volt + caliValue;
 
-  if (sensorValue < 614 || phValue > 8.5 || phValue < 6.5 || ppm > 500)
+  if (turbidityValue < 614 || phValue > 8.5 || phValue < 6.5 || ppm > 500)
   {
     Serial.println("not safe");
   }
